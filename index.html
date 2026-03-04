@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenClaw Prague Meetup 🐱</title>
+    <title>OpenClaw Prague Meetup #1 🐱</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -19,6 +19,7 @@
             min-height: 100vh;
             color: #fff;
             overflow-x: hidden;
+            line-height: 1.6;
         }
         
         .container {
@@ -55,9 +56,17 @@
         }
         
         .tagline {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
+            color: #ff6b6b;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
             color: #a0a0a0;
             margin-bottom: 40px;
+            font-style: italic;
         }
         
         .date-card {
@@ -106,51 +115,51 @@
         
         .section h2 {
             font-size: 1.8rem;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             color: #ff6b6b;
         }
         
-        .format-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+        .vision-box {
+            background: rgba(255,255,255,0.03);
+            border-left: 4px solid #e94560;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
         }
         
-        .format-card {
+        .vision-box p {
+            margin: 10px 0;
+            color: #d0d0d0;
+        }
+        
+        .agenda-item {
             background: rgba(255,255,255,0.03);
             border: 1px solid rgba(255,255,255,0.08);
             border-radius: 15px;
             padding: 25px;
+            margin: 20px 0;
             transition: transform 0.3s, border-color 0.3s;
         }
         
-        .format-card:hover {
-            transform: translateY(-5px);
+        .agenda-item:hover {
+            transform: translateX(5px);
             border-color: #e94560;
         }
         
-        .format-card h3 {
+        .agenda-item h3 {
             color: #e94560;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-size: 1.3rem;
         }
         
-        .format-card ul {
-            list-style: none;
+        .agenda-item .time {
+            color: #ff6b6b;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .agenda-item p {
             color: #c0c0c0;
-        }
-        
-        .format-card li {
-            padding: 8px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-        
-        .format-card li::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: #e94560;
         }
         
         .cta {
@@ -162,7 +171,14 @@
         }
         
         .cta h2 {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-note {
+            color: #ffc107;
+            font-weight: 600;
+            margin-top: 15px;
+            font-size: 0.95rem;
         }
         
         .btn {
@@ -175,6 +191,7 @@
             font-weight: 600;
             font-size: 1.1rem;
             transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px;
         }
         
         .btn:hover {
@@ -182,18 +199,32 @@
             box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
         }
         
-        .speakers-wanted {
-            background: rgba(255, 193, 7, 0.1);
-            border: 1px solid rgba(255, 193, 7, 0.3);
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid #e94560;
+        }
+        
+        .contributions {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
             border-radius: 15px;
             padding: 25px;
             margin: 40px 0;
-            text-align: center;
         }
         
-        .speakers-wanted h3 {
-            color: #ffc107;
-            margin-bottom: 10px;
+        .contributions h3 {
+            color: #e94560;
+            margin-bottom: 15px;
+        }
+        
+        .contributions ol {
+            margin-left: 20px;
+            color: #c0c0c0;
+        }
+        
+        .contributions li {
+            margin: 10px 0;
+            padding-left: 10px;
         }
         
         .philosophy {
@@ -228,12 +259,30 @@
     <div class="container">
         <div class="hero">
             <span class="emoji">🐱</span>
-            <h1>OpenClaw Prague</h1>
-            <p class="tagline">Free AI. Fun people. No corporate BS.</p>
+            <h1>OpenClaw Prague Meetup #1</h1>
+            <p class="tagline">For Builders, Thinkers, and Tinkerers</p>
+            <p class="subtitle">"I'm super happy to have a collaborator"</p>
+            <svg class="hero-illustration" width="200" height="150" viewBox="0 0 200 150" style="margin-top: 30px; opacity: 0.6;">
+                <!-- Simple hand-drawn style claw marks -->
+                <path d="M40 50 Q50 30, 60 50 Q70 70, 60 90" stroke="#e94560" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M70 40 Q85 20, 100 40 Q115 60, 100 80" stroke="#ff6b6b" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M100 50 Q115 30, 130 50 Q145 70, 130 90" stroke="#e94560" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <!-- Community dots connecting -->
+                <circle cx="50" cy="100" r="4" fill="#ff6b6b"/>
+                <circle cx="75" cy="110" r="4" fill="#e94560"/>
+                <circle cx="100" cy="105" r="4" fill="#ff6b6b"/>
+                <circle cx="125" cy="115" r="4" fill="#e94560"/>
+                <circle cx="150" cy="100" r="4" fill="#ff6b6b"/>
+                <!-- Connecting lines -->
+                <line x1="50" y1="100" x2="75" y2="110" stroke="#ff6b6b" stroke-width="1.5" opacity="0.5"/>
+                <line x1="75" y1="110" x2="100" y2="105" stroke="#e94560" stroke-width="1.5" opacity="0.5"/>
+                <line x1="100" y1="105" x2="125" y2="115" stroke="#ff6b6b" stroke-width="1.5" opacity="0.5"/>
+                <line x1="125" y1="115" x2="150" y2="100" stroke="#e94560" stroke-width="1.5" opacity="0.5"/>
+            </svg>
         </div>
         
         <div class="date-card">
-            <h2>📅 Save the Date</h2>
+            <h2>📅 Event Details</h2>
             <div class="details">
                 <div class="detail">
                     <div class="detail-label">When</div>
@@ -245,56 +294,115 @@
                 </div>
                 <div class="detail">
                     <div class="detail-label">Where</div>
-                    <div class="detail-value">TBD (pub vibes)</div>
+                    <div class="detail-value">Prague (venue TBD)</div>
+                </div>
+                <div class="detail">
+                    <div class="detail-label">Register</div>
+                    <div class="detail-value">via Luma</div>
                 </div>
             </div>
         </div>
         
         <div class="section">
-            <h2>What's happening?</h2>
-            <div class="format-grid">
-                <div class="format-card">
-                    <h3>Part 1: Show & Tell</h3>
-                    <ul>
-                        <li>Share your OpenClaw setup</li>
-                        <li>What worked, what exploded</li>
-                        <li>Hacks, automations, weird use cases</li>
-                        <li>Q&A and casual discussion</li>
-                    </ul>
-                </div>
-                <div class="format-card">
-                    <h3>Part 2: Lightning Talks</h3>
-                    <ul>
-                        <li>2 talks, 15-20 min each</li>
-                        <li>Casual style, no pressure</li>
-                        <li>Topics TBA</li>
-                        <li>Bring your demos!</li>
-                    </ul>
-                </div>
+            <h2>What is OpenClaw? 🤔</h2>
+            <div class="vision-box">
+                <p><strong>OpenClaw is an open-source AI assistant framework that runs on your own machine.</strong></p>
+                <p>Think of it as your personal AI sidekick — one you can customize, extend, and control completely. It connects to your tools, reads your files, manages your calendar, and helps you build automations that actually fit your workflow.</p>
+                <p>Unlike closed AI assistants locked behind corporate APIs, OpenClaw is built for <strong>tinkerers</strong>. Run it locally. Connect it to anything. Share your skills with the community. Make it yours.</p>
+                <p style="margin-top: 15px;"><strong>What makes it special:</strong></p>
+                <p>• <strong>Skills system</strong> — Add new capabilities by writing simple markdown files<br>
+                • <strong>Multi-model support</strong> — Run Claude, GPT, Gemini, or local models<br>
+                • <strong>Tool integrations</strong> — GitHub, Gmail, Jira, calendar, browser automation, and more<br>
+                • <strong>Privacy-first</strong> — Your data stays on your machine</p>
             </div>
         </div>
         
-        <div class="speakers-wanted">
-            <h3>🎤 Speakers Wanted!</h3>
-            <p>Got an OpenClaw story? A cool automation? A spectacular failure? We want to hear it.</p>
-            <p style="margin-top: 10px;">DM <strong>@daniel</strong> to claim a slot</p>
+        <div class="section">
+            <h2>The Vibe 🎯</h2>
+            <div class="vision-box">
+                <p><strong>Community-first AI event with strong open-source energy.</strong></p>
+                <p>OpenClaw is about the freedom to design new systems and being playful with AI. Eventually, frontier labs will squeeze the joy out of it — but right now we can have a ton of fun with open-weight models.</p>
+                <p><em>This is for builders, thinkers, and tinkerers. Not for people who want to generate AI slop and get rich — this is about curiosity, craft, and having fun.</em></p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📋 The Agenda</h2>
+            
+            <div class="agenda-item">
+                <h3>1. Free Talk & Introductions</h3>
+                <p>Open floor — meet the people around you. Casual networking.</p>
+            </div>
+            
+            <div class="agenda-item">
+                <h3>2. Structured Discussion Round</h3>
+                <p>Guided questions to share with the group:</p>
+                <p style="margin-top: 10px;">• What's your setup?<br>
+                • What are your skills?<br>
+                • How long have you been using OpenClaw?<br>
+                • Which models do you run?</p>
+                <p style="margin-top: 10px; color: #ff6b6b;">A Miro board will be opened so everyone can pin up their answers for a collective, structured discussion.</p>
+            </div>
+            
+            <div class="agenda-item">
+                <h3>3. Energy Round</h3>
+                <p>Shooting ideas, sharing setups, producing energy together.</p>
+            </div>
+            
+            <div class="agenda-item">
+                <h3>4. 2 × Short Keynotes (~30 min each)</h3>
+                <p>Inspiring talks from people who went deep — built something that genuinely saves time, improves a business, or is just really cool.</p>
+                <p style="margin-top: 10px; color: #ffc107;"><strong>📣 Submissions open for two keynote slots!</strong></p>
+            </div>
+            
+            <div class="agenda-item">
+                <h3>5. Hands-On Building Session</h3>
+                <p>Bring your laptops, Mac Minis, or whatever you run OpenClaw on. The goal: everyone leaves having built or improved something.</p>
+            </div>
+        </div>
+        
+        <div class="contributions">
+            <h3>📦 Contribute to the Community Repo</h3>
+            <p style="margin-bottom: 15px;">A public GitHub repo will be created where attendees can share skills, ideas, and configurations.</p>
+            <p style="font-weight: 600; margin-bottom: 10px;">How to contribute:</p>
+            <ol>
+                <li>Create a folder with your name (e.g., <code>contributors/your-name/</code>)</li>
+                <li>Push your skills, SKILL.md files, configs, or anything useful inside</li>
+                <li>AI will be run over all submissions to add structure and make them easier to share</li>
+            </ol>
+            <p style="margin-top: 15px; color: #a0a0a0;"><em>Contributions welcome before the event — if you have something to add, push it directly to the public repo!</em></p>
+        </div>
+        
+        <div class="cta">
+            <h2>Secure Your Spot 🎟️</h2>
+            <p style="margin-bottom: 20px; color: #c0c0c0;">Spots are limited. Registration via Luma required.</p>
+            <p style="margin-bottom: 20px; color: #a0a0a0; font-size: 0.95rem;">Each registration must include:<br>
+            • One paragraph about why you're coming or what interests you<br>
+            • A link (LinkedIn, GitHub, or short note about who you are)</p>
+            <p class="cta-note">This protects the community and ensures focused, like-minded AI thinkers and builders.</p>
+            <br>
+            <a href="#" class="btn">Register on Luma (Coming Soon)</a>
+            <a href="https://t.me/+openclaw" class="btn btn-secondary">Join Telegram Group</a>
         </div>
         
         <p class="philosophy">
-            "This isn't a conference with lanyards and lukewarm coffee. 
-            It's tinkerers in a pub, sharing what they built. 
+            "This isn't a conference with lanyards and lukewarm coffee.<br>
+            It's tinkerers in a pub, sharing what they built.<br>
             The AI revolution should be free and fun."
         </p>
         
-        <div class="cta">
-            <h2>Join the Revolution 🚀</h2>
-            <p style="margin-bottom: 25px; color: #a0a0a0;">Free entry. Free beer (while supplies last). Free AI forever.</p>
-            <a href="https://t.me/+openclaw" class="btn">Join Telegram Group</a>
+        <div class="section" style="margin-top: 60px;">
+            <h2>About Your Host 👋</h2>
+            <div class="date-card" style="text-align: left;">
+                <p><strong>Daniel Vecera</strong> is a developer and AI enthusiast based in Prague. He's been building software for over a decade, from startups to enterprise systems, and recently fell down the rabbit hole of personal AI assistants.</p>
+                <p style="margin-top: 15px;">When he's not tinkering with OpenClaw, he's probably exploring how AI can help with everyday problems — from managing ADHD to resurrecting old startup ideas. He believes the best AI tools are the ones you can actually understand, customize, and control.</p>
+                <p style="margin-top: 15px; color: #a0a0a0; font-style: italic;">"I started this meetup because I wanted to meet other people who get excited about building things with AI — not just using it, but understanding it, breaking it, and making it better."</p>
+            </div>
         </div>
         
         <footer>
-            <p>Built with 🐱 by the <a href="https://openclaw.ai">OpenClaw</a> community</p>
-            <p style="margin-top: 10px;">Source: <a href="https://github.com/openclaw/prague-meetup">GitHub</a></p>
+            <p>Hosted at <a href="https://openclawprague.cz">openclawprague.cz</a></p>
+            <p style="margin-top: 10px;">Built with 🐱 by the <a href="https://openclaw.ai">OpenClaw</a> community</p>
         </footer>
     </div>
 </body>
