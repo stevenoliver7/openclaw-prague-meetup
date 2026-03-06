@@ -4,3 +4,7 @@
 .github/agents/*-ainova/
 .github/instructions/*-ainova.instructions.md
 .github/instructions/*-ainova/
+.github/agents/
+.gitignore
+.playwright-mcp/
+tmp/

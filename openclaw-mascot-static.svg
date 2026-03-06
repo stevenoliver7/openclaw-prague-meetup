@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 25" width="480" height="400" shape-rendering="crispEdges">
+  <style>
+    .cat-color { fill: #e94560; }
+    .cat-accent { fill: #ff6b6b; }
+    .cat-white { fill: #fff; }
+    .cat-gray { fill: #a0a0a0; }
+  </style>
+  <!-- Body -->
+  <path class="cat-color" d="M5,10 h4 v-4 h4 v4 h4 v-4 h4 v4 h4 v10 h-20 Z" />
+  <!-- Cheeks and nose -->
+  <path class="cat-accent" d="M7,12 h2 v2 h-2 Z M17,12 h2 v2 h-2 Z M12,16 h2 v2 h-2 Z" />
+  <!-- Eyes -->
+  <rect class="cat-white" x="6" y="12" width="4" height="4" />
+  <rect class="cat-gray" x="7" y="13" width="2" height="2" />
+  <rect class="cat-white" x="16" y="12" width="4" height="4" />
+  <rect class="cat-gray" x="17" y="13" width="2" height="2" />
+  <!-- Claws -->
+  <path class="cat-white" d="M6,21 h2 v4 h-2 Z M11,21 h2 v4 h-2 Z M16,21 h2 v4 h-2 Z M21,21 h2 v4 h-2 Z" />
+</svg>
