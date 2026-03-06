@@ -1,6 +1,6 @@
 const content = {
     hero: {
-        dateBadge: "MARCH 26, 2026",
+        dateBadge: "MARCH 26, 2026 17:30",
         title: "OpenClaw Prague",
         tagline: "Share your best stories!",
         subtitle: "We're building alwasy on open-source AI agents. Come and tinker and show us what you broke this week."
