@@ -3,7 +3,7 @@ const content = {
         dateBadge: "MARCH 26, 2026 17:30",
         title: "OpenClaw Prague",
         tagline: "Share your best stories!",
-        subtitle: "We're building alwasy on open-source AI agents. Come and tinker and show us what you broke this week."
+        subtitle: "We're building always-on open-source AI agents. Come and tinker and show us what you broke this week."
     },
     eventDetails: {
         title: "What to Expect",
@@ -53,9 +53,7 @@ const content = {
         warning: "⚠️ Limited to 50 Tinkerers",
         description: "To keep the signal-to-noise ratio high, not all spots are guaranteed. We're not trying to be super exclusive—we just want to make sure the room is filled with genuine builders who have some experience.<br><br><strong>When registering, please include two short sentences about who you are and what you're tinkering with.</strong>",
         lumaBtn: "Apply on Luma",
-        lumaLink: "#",
-        meetupBtn: "Apply on Meetup",
-        meetupLink: "#",
+        lumaLink: "https://luma.com/l5boronk",
         faq: [
             { q: "Is this a pitch fest?", a: "Absolutely not. We actively discourage corporate pitches. Show us code or get off the stage." }
         ]

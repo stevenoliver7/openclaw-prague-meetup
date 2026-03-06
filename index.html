@@ -336,7 +336,6 @@
             <p id="reg-desc" style="margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;"></p>
             <p>
                 <a href="#" id="reg-luma" class="btn" style="background: rgba(255,255,255,0.1); border: 1px solid #ff6b6b; margin: 0 10px;"></a>
-                <a href="#" id="reg-meetup" class="btn" style="background: rgba(255,255,255,0.1); border: 1px solid #e94560; margin: 0 10px;"></a>
             </p>
             <div id="faq-container" style="text-align: left; max-width: 500px; margin: 40px auto 0;">
             </div>
@@ -393,8 +392,7 @@
         document.getElementById('reg-desc').innerHTML = content.registration.description;
         document.getElementById('reg-luma').innerHTML = content.registration.lumaBtn;
         document.getElementById('reg-luma').href = content.registration.lumaLink;
-        document.getElementById('reg-meetup').innerHTML = content.registration.meetupBtn;
-        document.getElementById('reg-meetup').href = content.registration.meetupLink;
+
 
         document.getElementById('faq-container').innerHTML = content.registration.faq.map(item => `
             <details>
